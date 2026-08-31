@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Letter For You 💌</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="letter-page">
+
+<div class="stars"></div>
+
+<div class="letter-container">
+
+    <div class="envelope" onclick="openLetter()">
+        <div class="envelope-top"></div>
+
+        <div class="envelope-heart">
+            💗
+        </div>
+
+        <p>Tap to open</p>
+    </div>
+
+    <div class="letter" id="letter">
+
+        <div class="letter-decoration">♡</div>
+
+        <p class="dear">Dear You,</p>
+
+        <h1>There's something<br>I wanted you to know...</h1>
+
+        <p>
+            I don't think words will ever be enough to explain
+            how much you mean to me.
+        </p>
+
+        <p>
+            Every laugh, every memory, every random little moment
+            we've shared has become something I never want to forget.
+        </p>
+
+        <p>
+            You have a way of making life feel a little brighter,
+            and I'm genuinely grateful that you're part of mine.
+        </p>
+
+        <p>
+            So this isn't just a website.
+            It's a tiny piece of my heart, made especially for you. 💗
+        </p>
+
+        <p class="final-line">
+            Whatever happens, I hope you always remember
+            how loved you are.
+        </p>
+
+        <div class="signature">
+            With all my heart,<br>
+            <span>♡ Someone who loves you</span>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function openLetter() {
+    document.querySelector(".envelope").classList.add("opened");
+
+    setTimeout(() => {
+        document.getElementById("letter").classList.add("visible");
+    }, 700);
+}
+
+</script>
+
+</body>
+</html>
