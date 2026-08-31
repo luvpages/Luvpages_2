@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Little Universe 🌌</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="galaxy">
+
+<div class="stars"></div>
+
+<div class="galaxy-title">
+    <p>WELCOME TO</p>
+    <h1>Your Little Universe</h1>
+    <span>Tap the hearts... 💗</span>
+</div>
+
+<div class="orbit orbit1">
+    <div class="heart-photo photo-a" onclick="showMessage('photo1')">
+        <img src="images/photo1.jpg">
+    </div>
+
+    <div class="heart-photo photo-b" onclick="showMessage('photo2')">
+        <img src="images/photo2.jpg">
+    </div>
+</div>
+
+<div class="orbit orbit2">
+    <div class="heart-photo photo-c" onclick="showMessage('photo3')">
+        <img src="images/photo3.jpg">
+    </div>
+
+    <div class="heart-photo photo-d" onclick="showMessage('photo4')">
+        <img src="images/photo4.jpg">
+    </div>
+</div>
+
+<div class="orbit orbit3">
+    <div class="heart-photo photo-e" onclick="showMessage('photo5')">
+        <img src="images/photo5.jpg">
+    </div>
+
+    <div class="heart-photo photo-f" onclick="showMessage('photo6')">
+        <img src="images/photo6.jpg">
+    </div>
+</div>
+
+<div class="center-heart">♡</div>
+
+<div id="messageBox" class="message-box">
+    <button onclick="closeMessage()">×</button>
+    <div id="messageContent"></div>
+</div>
+
+<a href="letter.html" class="next-btn">
+    There's More... 💌
+</a>
+
+<script>
+
+const messages = {
+
+photo1: "One of my favorite memories with you. 💗",
+
+photo2: "This moment will always have a special place in my heart. 🥹",
+
+photo3: "Look at you being adorable again. 🙄💗",
+
+photo4: "A memory I could look at a thousand times.",
+
+photo5: "You make ordinary moments feel special.",
+
+photo6: "And this one? Definitely keeping it forever. ♡"
+
+};
+
+function showMessage(photo) {
+    document.getElementById("messageContent").innerHTML =
+        "<h2>💗</h2><p>" + messages[photo] + "</p>";
+
+    document.getElementById("messageBox").classList.add("show");
+}
+
+function closeMessage() {
+    document.getElementById("messageBox").classList.remove("show");
+}
+
+</script>
+
+</body>
+      </html>
