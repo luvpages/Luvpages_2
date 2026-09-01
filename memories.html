@@ -63,9 +63,11 @@ photo6: "And this one? Definitely keeping it forever. ♡"
 };
 
 function showMessage(photo) {
-    document.getElementById("messageContent").innerHTML =
-        "<h2>💗</h2><p>" + messages[photo] + "</p>";
+    const num = photo.replace("photo", "");
 
+document.getElementById("messageContent").innerHTML =
+"<img src='image/pic" + num + ".jpg' style='width:100%; max-width:350px; border-radius:15px; margin-bottom:15px;'>" +
+"<h2>💗</h2><p>" + messages[photo] + "</p>";
     document.getElementById("messageBox").classList.add("show");
 }
 
