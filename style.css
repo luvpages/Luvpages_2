@@ -589,3 +589,13 @@ body {
     transform: translateY(-15px) scale(1.12);
   }
     }
+.start-again {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: #e83e8c;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 17px;
+    }
